@@ -1,0 +1,71 @@
+//less中的单行注释不会编译到css中
+.box1{
+	background-color: blue;
+	.box2{
+		background-color: orange;
+	}
+}
+
+//变量的语法 @变量名
+@a:100px;
+@b:blue;
+@c:box6;
+.box5{
+	width: @a;
+	height:@a;
+	background-color: @b;
+}
+.@{c}{
+	width:@a;
+}
+
+//父元素和扩展
+.box1{
+	.box2{
+		color: red;
+	}
+	//子元素选择器
+	>.box3{
+		color: black;
+	}
+	//box1的hover
+	&:hover{
+		color:orange;
+	}
+}
+
+ //:extend()对当前选择器扩展的样式，即继承
+.p1{
+	width: 100px;
+	height: 100px;
+}
+.p2:extend(.p1){
+	color:wheat;
+}
+
+//也可以直接对样式应用，此时p4为mixins函数
+.p4(){
+	width: 100px;
+	height: 100px;
+	background-color: burlywood;
+}
+.p5{
+	.p4();
+}
+
+//混合函数的用法
+.test(@w,@h){
+	width: @w;
+	height: @h;
+}
+div{
+	.test(100px,200px);
+}
+
+span{
+	//计算颜色的平均数
+	color: average(red,blue);
+	//加深当前颜色
+	background-color: darken(#bfa,20%);
+}
+

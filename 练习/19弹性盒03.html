@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			ul{
+				width: 700px;
+				border: 10px salmon solid;
+				display:flex;
+				
+			}
+			li{
+				width: 200px;
+				height: 100px;
+				font-size: 50px;
+				text-align: center;
+				line-height: 100px;
+				/* 元素基础长度
+				   默认auto 表示参考元素自身的宽度或高度*/
+				flex-basis: 100px;
+				/* flex可以设置元素所有的三个样式
+				   flex:增长 衰减 基础*/
+				flex:
+			}
+			li:nth-child(1){
+				background-color: #0000FF;
+				/* 决定弹性元素的排列顺序 */
+				order:3;
+			}
+			li:nth-child(2){
+				background-color: #00FFFF;
+				order:1;
+			}
+			li:nth-child(3){
+				background-color: #800080;
+				order:2;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 
+		 flex 弹性盒
+		 -代替浮动用来布局
+		 -让元素跟随页面大小变化
+			-弹性容器：通过display设置弹性容器
+				display:flex  设置为块级弹性容器
+				display:inline-flex 设置为行内弹性容器
+			-弹性元素：弹性容器的子元素为弹性元素
+		 -->
+		 <ul>
+		 	<li>1</li>
+			<li>2</li>
+			<li>3</li>
+		 </ul>
+	</body>
+</html>

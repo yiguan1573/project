@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding:0;
+			}
+			.box1{
+				width: 600px;
+				height: 600px;
+				background-color: skyblue;
+			}
+			.box2{
+				width: 100px;
+				height: 100px;
+				background-color: lightyellow;
+				transition: all 1s;
+				transition-timing-function: ease;
+				margin-left: 500px;
+			}
+			.box3{
+				width: 100px;
+				height: 100px;
+				background-color: orange;
+				transition: all 1s;
+				/* linear 匀速 */
+				transition-timing-function: linear;
+				transition-delay: 2s;
+				margin-left: 500px;
+				margin-top:200px;
+			}
+			.box1:hover div{
+				width: 200px;
+				height: 200px;
+				background-color: #9ACD32;
+				margin-left: 0px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1">
+			<div class="box2"></div>
+			<div class="box3"></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			html{
+				/* 设置网页到人眼的视距 */
+				perspective: 800px;
+			}
+			.box1{
+				width: 200px;
+				height:200px;
+				background-color: #87CEEB;
+				margin: 100px auto;
+				transition: 2s;
+			}
+			.box1:hover{
+				/* 可以使元素沿着xyz旋转指定的角度
+				   rotateX()
+				   rotateY()
+				   rotateZ()
+				   1deg表示1度
+				   1turn表示一圈*/
+				   /* transform: rotateZ(1turn); */
+				   /* transform: rotateX(1turn); */
+				  transform: rotateZ(1turn);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1"></div>
+	</body>
+</html>

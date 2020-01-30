@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			ul{
+				width: 700px;
+				height: 800px;
+				border: 10px salmon solid;
+				display:flex;
+				/* 设置元素在辅轴上的对齐、元素间的关系
+					sretch 默认值 元素长度设置为对齐
+					flex-start 元素不会拉升
+					flex-end
+					center
+					*/
+				align-items: center;
+				/* 辅轴空白空间的分配 */
+				align-content: space-around;
+			}
+			li{
+				width: 200px;
+				background-color: #0000FF;
+				font-size: 50px;
+				text-align: center;
+			}
+			li:nth-child(2){
+				background-color: #00FFFF;
+				/* 单独设置每个弹性元素上的align-items */
+				align-self: flex-end;
+			}
+			li:nth-child(3){
+				background-color: #800080;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 
+		 flex 弹性盒
+		 -代替浮动用来布局
+		 -让元素跟随页面大小变化
+			-弹性容器：通过display设置弹性容器
+				display:flex  设置为块级弹性容器
+				display:inline-flex 设置为行内弹性容器
+			-弹性元素：弹性容器的子元素为弹性元素
+		 -->
+		 <ul>
+		 	<li>1</li>
+			<li>2
+			<div>2</div>
+			</li>
+			<li>3
+			<div>3</div>
+			<div>3</div>
+			</li>
+		 </ul>
+	</body>
+</html>

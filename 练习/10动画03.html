@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.box2{
+				width:100px;
+				height: 100px;
+				background-color: #00FFFF;
+				border-radius: 50%;
+				animation: ball 1s 0.5s forwards;
+			}
+			.box1{
+				height: 500px;
+				border-bottom: 10px black solid;
+				overflow: hidden;
+			}
+			@keyframes ball{
+				from{
+					margin-top:0;
+				}
+				10%,30%,50%,70%,90%,100%{
+					margin-top:400px;
+					animation-timing-function: ease-in;
+				}
+				20%{
+					margin-top:80px;
+					animation-timing-function: ease-out;
+				}
+				40%{
+					margin-top:170px;
+					animation-timing-function: ease-out;
+				}
+				60%{
+					margin-top:280px;
+					animation-timing-function: ease-out;
+				}
+				80%{
+					margin-top:380px;
+					animation-timing-function: ease-out;
+				}
+				95%{
+					margin-top:392px;
+					animation-timing-function: ease-out;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1">
+			<div class="box2"></div>
+		</div>
+	</body>
+</html>

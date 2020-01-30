@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/*
+			 语法：  @media 查询规则 {}
+				媒体类型：
+					all 所有设备
+					print 打印设备
+					screen 带屏幕的设备
+					speech 屏幕阅读器
+			 */
+			/* @media  screen{
+				body{
+					background-color: #0000FF;
+				}
+			} */
+			/* 
+				媒体特性：
+					width 视口宽度
+					height 视口高度
+					min-width 视口最小宽度
+					max-width 视口最大宽度
+					常用断点 768px 992px 1200px
+					and 表示与
+					,  表示或
+			 */
+			@media (max-width:800px) and (min-width:700px){
+				body{
+					background-color: #0000FF;
+				}
+			}
+		</style>
+	</head>
+	<body>
+	</body>
+</html>

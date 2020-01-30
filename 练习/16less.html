@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			html{
+				/* css原生支持变量的设置
+				   格式 --变量名：颜色或像素等*/
+				--color: blue;  
+				--length:200px;
+			}
+			.box1{
+				/* calc(200px*2) 为计算函数*/
+				width: var(--length);
+				height: var(--length);
+				background-color: var(--color);
+			}
+			.box2{
+				width:var(--length);
+				height: var(--length);
+				color: var(--color);
+			}
+			.box3{
+				width: var(--length);
+				height: var(--length);
+				border:10px solid var(--color);
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 
+			less是css的预处理语言
+			通过less可以编写更少的代码实现更强大的功能
+		 -->
+		 <div class="box1">aaaaaaa</div>
+		 <div class="box2">aaaaaaa</div>
+		 <div class="box3">aaaaaaa</div>
+	</body>
+</html>

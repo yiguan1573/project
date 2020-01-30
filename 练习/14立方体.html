@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			html{
+				perspective: 800px;
+			}
+			.cube{
+				width: 500px;
+				height:500px;
+				background-color: #87CEEB;
+				margin: 200px auto;
+				/* 设置3D效果 */
+				transform-style: preserve-3d;
+				transform: rotateX(45deg) rotateZ(45deg);
+				animation: rot 10s infinite linear;
+			}
+			.cube > div{
+				width: 500px;
+				height:500px;
+				overflow: hidden;
+				/* 为元素设置透明效果 */
+				opacity: 0.7;
+				position: absolute;
+			}
+			img{
+				vertical-align: top;
+			}
+			.box1{
+				transform: rotateY(90deg) translateZ(250px);
+			}
+			.box2{
+				transform: rotateY(-90deg) translateZ(250px);
+			}
+			.box3{
+				transform: rotateX(-90deg) translateZ(250px);
+			}
+			.box4{
+				transform: rotateX(90deg) translateZ(250px);
+			}
+			.box5{
+				transform: rotateY(180deg) translateZ(250px);
+			}
+			.box6{
+				transform: rotateY(0deg) translateZ(250px);
+			}
+			@keyframes rot{
+				from{
+					transform: rotateX(0deg) rotateZ(0deg);
+				}
+				to{
+					transform: rotateX(1turn) rotateZ(1turn);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="cube">
+			<div class="box1">
+				<img src="img/01.png">
+			</div>
+			<div class="box2">
+				<img src="img/02.png">
+			</div>
+			<div class="box3">
+				<img src="img/04.png">
+			</div>
+			<div class="box4">
+				<img src="img/05.png">
+			</div>
+			<div class="box5">
+				<img src="img/06.png">
+			</div>
+			<div class="box6">
+				<img src="img/07.png">
+			</div>
+		</div>
+	</body>
+</html>
